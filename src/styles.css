@@ -1,4 +1,15 @@
-.App {
-  font-family: sans-serif;
-  text-align: center;
+:root {
+  box-sizing: border-box;
+  --confetti: rgba(233, 212, 96);
+  --buddha_gold: rgba(189, 155, 25);
+  --ripe_lemon: rgba(247, 202, 24);
+  --kurnikova: rgba(250, 216, 89);
+  --background_white: #fff;
+}
+
+*, 
+::before, 
+::after {
+  box-sizing: inherit;
+  margin-top: .5em;
 }
