@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@300&display=swap");
+
 :root {
   box-sizing: border-box;
   max-width: 100vw;
@@ -6,40 +8,80 @@
   --ripe_lemon: rgba(247, 202, 24);
   --kurnikova: rgba(250, 216, 89);
   --background_white: #fff;
-  --salem_green: rgba(30, 130,76);
+  --salem_green: rgba(30, 130, 76);
   --dark_sea_green: rgba(144, 198, 149);
   --gossip_green: rgba(135, 211, 124);
 }
 
-*, 
-::before, 
+*,
+::before,
 ::after {
   box-sizing: inherit;
-  margin-top: .5em;
+  margin-top: 0.5em;
+}
+
+body {
+  font-family: "Rubik", Arial, Helvetica, sans-serif;
+  margin: 0;
+  padding: 0;
 }
 
 .head_wrapper {
   display: flex;
-  background-color: var(--background_white);
   justify-content: space-between;
+  color: var(--buddha_gold);
 }
 
-.head_wrapper  ul {
+.head_wrapper .delivery {
   list-style-type: none;
   margin: 0;
   padding: 0;
   display: flex;
   align-items: center;
+  font-size: 1.2rem;
 }
 
-.head_wrapper ul li span:last-child {
+.head_wrapper .delivery div {
+  cursor: pointer;
+  color: var(--salem_green);
+}
+
+.head_wrapper .delivery div,
+::before,
+::after {
+  margin: 0.5em;
+}
+
+.head_wrapper .delivery div span:last-child {
   display: none;
 }
 
-.head_wrapper .image_wrapper > img{
+.head_wrapper .image_wrapper > img {
   width: 10vw;
   height: 15vh;
   border-radius: 50%;
 }
 
+.category_container {
+  border-top: 0.1em solid var(--salem_green);
+  border-bottom: 0.1em solid var(--salem_green);
+  background-color: var(--confetti);
+  color: var(--background_white);
+  text-transform: uppercase;
+}
 
+.category_wrapper {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+}
+
+.category_wrapper li,
+::before,
+::after {
+  margin: 0.5em;
+}
+
+@media();

@@ -1,68 +1,51 @@
-import { GrDeliver, GrCart, GrUser, GrContactInfo } from 'react-icons/gr';
-import { IoStorefrontOutline } from 'react-icons/io5';
+import {
+  FaTruckMoving,
+  FaUser,
+  FaStoreAlt,
+  FaRegCommentDots,
+  FaCartPlus
+} from "react-icons/fa";
 
 export const HEAD = () => {
-  return(
+  return (
     <div className="head_wrapper">
-      <ul>
-        <li>
-          <form action="">
-            <input
-              type="text"
-              name="search"
-              placeholder=""
-            />
-          </form>
-        </li>
-        <li>
+      <div className="delivery">
+        <div>
           <span>
-            <IoStorefrontOutline />
+            <FaStoreAlt />
           </span>
+          <span>Click & Collect</span>
+        </div>
+        <div>
           <span>
-            Click & Collect
+            <FaTruckMoving />
           </span>
-        </li>
-        <li>
-          <span>
-            <GrDeliver />
-          </span>
-          <span>
-            Home Delivery
-          </span>
-        </li>
-      </ul>
-      <div className="image_wrapper">
-        <img 
-          src="/images/logo.jpg" 
-          alt="evanna homeware logo" 
-        />
+          <span>Home Delivery</span>
+        </div>
       </div>
-      <ul>
-        <li>
+      <div className="image_wrapper">
+        <img src="/images/logo.jpg" alt="evanna homeware logo" />
+      </div>
+      <div className="delivery">
+        <div>
           <span>
-            <GrContactInfo />
+            <FaRegCommentDots />
           </span>
+          <span>Contact Us</span>
+        </div>
+        <div>
           <span>
-            Contact Us
+            <FaUser />
           </span>
-        </li>
-        <li>
+          <span>Sign Up/Sign In</span>
+        </div>
+        <div>
           <span>
-            <GrUser />
+            <FaCartPlus />
           </span>
-          <span>
-            Sign Up/Sign In
-          </span>
-        </li>
-        <li>
-          <span>
-            <GrCart />
-          </span>
-          <span>
-            Cart
-          </span>
-        </li>
-      </ul>
+          <span>Cart</span>
+        </div>
+      </div>
     </div>
   );
-}
+};
