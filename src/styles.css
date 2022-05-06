@@ -91,18 +91,24 @@ body {
 .category_wrapper li,
 ::before,
 ::after {
-  margin: 0.5em;
+  margin: 0.2em 0.5em;
 }
 
 .category_wrapper li {
   cursor: pointer;
+  display: inline-block;
 }
 
-.category_wrapper li:hover {
-  border-bottom: 0.1rem solid var(--salem_green);
+.main_nav {
+  display: inline-block;
+  text-decoration: none;
+  color: var(--background_white);
 }
 
-.category_wrapper li:active {
+.main_nav_active {
+  display: inline-block;
+  text-decoration: none;
+  color: var(--background_white);
   background-color: var(--salem_green);
   padding: 0.2em 0.5em;
 }
@@ -126,16 +132,4 @@ body {
     width: 30vw;
     height: 25vh;
   }
-}
-
-.main_nav {
-  text-decoration: none;
-  color: var(--background_white);
-}
-
-.main_nav_active {
-  text-decoration: none;
-  color: var(--background_white);
-  background-color: var(--salem_green);
-  padding: 0.2em 0.5em;
 }
