@@ -1,3 +1,3 @@
 export const ABOUT_US = () => {
-  return <div></div>;
+  return <div>about us page</div>;
 };

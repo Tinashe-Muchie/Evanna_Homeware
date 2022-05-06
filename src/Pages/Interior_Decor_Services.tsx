@@ -1,3 +1,3 @@
 export const INTERIOR_DECOR = () => {
-  return <div></div>;
+  return <div>INTERIOR_DECOR</div>;
 };
