@@ -1,3 +1,7 @@
 export const CONTACT_US = () => {
-  return <div>contact page</div>;
+  return (
+    <section className="contact_us_container">
+      
+    </section>
+  );
 };
