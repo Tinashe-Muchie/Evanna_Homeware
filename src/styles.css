@@ -68,7 +68,7 @@ body {
 
 .head_container .image_wrapper > img {
   width: 46vw;
-  height: 18vh;
+  height: 15vh;
 }
 
 .category_container {
@@ -109,7 +109,7 @@ body {
   display: inline-block;
   text-decoration: none;
   color: var(--background_white);
-  background-color: var(--salem_green);
+  border-bottom: 0.2rem solid var(--salem_green);
   padding: 0.2em 0.5em;
 }
 

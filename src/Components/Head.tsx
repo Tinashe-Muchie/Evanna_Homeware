@@ -3,7 +3,7 @@ import { NavLink } from "react-router-dom";
 
 export const HEAD = () => {
   return (
-    <div className="head_container">
+    <header className="head_container">
       <div className="head_wrapper">
         <div className="delivery">
           <div>
@@ -96,6 +96,6 @@ export const HEAD = () => {
           </li>
         </ul>
       </nav>
-    </div>
+    </header>
   );
 };
