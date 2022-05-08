@@ -1,5 +1,12 @@
 import { useState } from "react";
-import { FaQuestion } from "react-icons/fa";
+import {
+  FaQuestion,
+  FaFacebookF,
+  FaInstagram,
+  FaWhatsapp,
+  FaTiktok
+} from "react-icons/fa";
+import { Link } from "react-router-dom";
 
 export const CONTACT_US = () => {
   const [values, setValues] = useState({
@@ -60,13 +67,30 @@ export const CONTACT_US = () => {
         </main>
       </form>
       <p>
-      Collections and appointments at our Malbereign (Harare) showroom can be scheduled via the following channels:
+        Collections and appointments at our Malbereign (Harare) showroom can be
+        scheduled via the following channels:
       </p>
-      <span>
-      </span>
-      <span>
-        Contact Number: +263 78 614 1715
-      </span>
+      <span>Email Address: evannahomeware@yahoo.com</span>
+      <span>Contact Number: +263 78 614 1715</span>
+      <div>
+        Social Media:
+        <span>
+          {" "}
+          <FaFacebookF />{" "}
+        </span>
+        <span>
+          {" "}
+          <FaInstagram />{" "}
+        </span>
+        <span>
+          {" "}
+          <FaWhatsapp />{" "}
+        </span>
+        <span>
+          {" "}
+          <FaTiktok />{" "}
+        </span>
+      </div>
     </section>
   );
 };
