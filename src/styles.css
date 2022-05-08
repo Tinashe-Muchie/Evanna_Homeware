@@ -3,7 +3,6 @@
 :root {
   box-sizing: border-box;
   max-width: 100vw;
-  height: 100%;
   --confetti: rgba(233, 212, 96);
   --buddha_gold: rgba(189, 155, 25);
   --ripe_lemon: rgba(247, 202, 24);
@@ -14,7 +13,7 @@
   --gossip_green: rgba(135, 211, 124);
   --logo_green: rgba(7, 59, 39);
   --logo_gold: rgba(182, 138, 61);
-  --logo_gold_forms: rgba(182, 138, 61, 0.7);
+  --logo_gold_footer: rgba(182, 138, 61, 0.5);
 }
 
 *,
@@ -28,9 +27,6 @@ body {
   font-family: "Rubik", Arial, Helvetica, sans-serif;
   margin: 0;
   padding: 0;
-  min-height: 100%;
-  display: flex;
-  flex-direction: column;
 }
 
 .head_wrapper {
@@ -199,7 +195,7 @@ input[type="tel"] {
   text-transform: uppercase;
   font-weight: bold;
   color: var(--logo_green);
-  transition: box-shadow 1.5s;
+  transition: box-shadow 0.5s;
   border: 0.1em solid var(--logo_green);
   box-shadow: 0.1em 0.3em var(--logo_green);
   border-radius: 0.2em;
@@ -227,6 +223,83 @@ input[type="tel"] {
 
 .socials_links {
   text-decoration: none;
+  color: var(--logo_green);
+}
+
+.socials_links:hover {
+  color: var(--background_white);
+}
+
+.footer_wrapper {
+  border-top: 0.1rem solid var(--logo_green);
+  background-color: var(--logo_gold_footer);
+  color: var(--background_white);
+  padding: 1em;
+}
+
+.footer_wrapper section .quick_links {
+  display: flex;
+  flex-direction: column;
+}
+
+.footer_wrapper section .quick_links span {
+  font-size: 0.8rem;
+}
+
+.footer_wrapper section .quick_links span:first-child {
+  font-size: 1rem;
+  font-weight: bold;
+  margin-bottom: 0.3em;
+}
+
+.footer_wrapper section .weekly_interior_content {
+  display: flex;
+  flex-direction: column;
+}
+
+.footer_wrapper section .weekly_interior_content span {
+  font-size: 0.8rem;
+}
+
+.footer_wrapper section .deliveries {
+  font-size: 0.8rem;
+  margin: 1.5em 0;
+}
+
+.footer_wrapper section .weekly_interior_content span:first-child {
+  font-size: 1rem;
+  font-weight: bold;
+  margin-bottom: 0.3em;
+}
+
+.footer_wrapper section:last-child {
+  border-top: 0.1em solid var(--logo_green);
+}
+
+.footer_wrapper section:last-child div span {
+  margin-right: 0.3em;
+  font-size: 0.8rem;
+}
+
+.footer_wrapper section:last-child span {
+  font-size: 0.8rem;
+}
+
+.footer_socials {
+  text-decoration: none;
+  color: var(--background_white);
+}
+
+.footer_socials:hover {
+  color: var(--logo_green);
+}
+
+.footer_nav {
+  text-decoration: none;
+  color: var(--background_white);
+}
+
+.footer_nav:hover {
   color: var(--logo_green);
 }
 

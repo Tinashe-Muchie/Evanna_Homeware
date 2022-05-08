@@ -1,5 +1,5 @@
 import "./styles.css";
-import { HEAD } from "./Components/Head";
+import { HEAD, FOOTER } from "./Components/index";
 import { ROUTING } from "./Routing";
 
 export default function App() {
@@ -7,6 +7,9 @@ export default function App() {
     <div className="app_wrapper">
       <HEAD />
       <ROUTING />
+      <footer>
+        <FOOTER />
+      </footer>
     </div>
   );
 }
