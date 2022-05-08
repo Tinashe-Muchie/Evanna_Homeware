@@ -1,12 +1,6 @@
 import { useState } from "react";
-import {
-  FaQuestion,
-  FaFacebookF,
-  FaInstagram,
-  FaWhatsapp,
-  FaTiktok
-} from "react-icons/fa";
-import { Link } from "react-router-dom";
+import { FaQuestion, FaFacebookF, FaInstagram, FaTiktok } from "react-icons/fa";
+import { NavLink } from "react-router-dom";
 
 export const CONTACT_US = () => {
   const [values, setValues] = useState({
@@ -66,30 +60,40 @@ export const CONTACT_US = () => {
           <input type="submit" value="Send" />
         </main>
       </form>
-      <p>
-        Collections and appointments at our Malbereign (Harare) showroom can be
-        scheduled via the following channels:
-      </p>
-      <span>Email Address: evannahomeware@yahoo.com</span>
-      <span>Contact Number: +263 78 614 1715</span>
-      <div>
-        Social Media:
+      <div className="extra_contacts">
+        <p>
+          Collections and appointments at our Malbereign (Harare) showroom can
+          be scheduled via the following channels:
+        </p>
         <span>
-          {" "}
-          <FaFacebookF />{" "}
+          Email Address: <strong>evannahomeware@yahoo.com </strong>{" "}
         </span>
         <span>
-          {" "}
-          <FaInstagram />{" "}
+          Contact Number: <strong> +263 78 614 1715 </strong>{" "}
         </span>
-        <span>
-          {" "}
-          <FaWhatsapp />{" "}
-        </span>
-        <span>
-          {" "}
-          <FaTiktok />{" "}
-        </span>
+        <div>
+          Social Media:
+          <span className="socials">
+            <NavLink to="/facebook" className="socials_links" end>
+              <FaFacebookF />
+            </NavLink>
+          </span>
+          <span className="socials">
+            <NavLink
+              to={{ pathname: "/https://www.instagram.com/evanna_homeware_/" }}
+              target="_blank"
+              className="socials_links"
+              end
+            >
+              <FaInstagram />
+            </NavLink>
+          </span>
+          <span className="socials">
+            <NavLink to="/tiktok" className="socials_links" end>
+              <FaTiktok />
+            </NavLink>
+          </span>
+        </div>
       </div>
     </section>
   );

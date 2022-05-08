@@ -4,7 +4,7 @@ import { ROUTING } from "./Routing";
 
 export default function App() {
   return (
-    <div>
+    <div className="app_wrapper">
       <HEAD />
       <ROUTING />
     </div>
