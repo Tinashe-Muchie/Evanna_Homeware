@@ -14,25 +14,19 @@ export const CONTACT_US = () => {
       id: 1,
       name: "fullname",
       type: "text",
-      placeholder: "Angela Nyakuruwa"
+      placeholder: "Angela Nyahuruwa"
     },
     {
       id: 2,
       name: "email",
       type: "email",
-      placeholder: "evannahomeware@gmail.com"
+      placeholder: "evannahomeware@yahoo.com"
     },
     {
       id: 3,
       name: "phone_number",
       type: "tel",
       placeholder: "+263 77 534 5876"
-    },
-    {
-      id: 4,
-      name: "message",
-      type: "textarea",
-      placeholder: "Your question goes here!"
     }
   ];
 
@@ -58,9 +52,21 @@ export const CONTACT_US = () => {
               value={values[input.name as keyof typeof values]}
             />
           ))}
+          <label>
+            Message
+            <textarea />
+          </label>
           <input type="submit" value="Send" />
         </main>
       </form>
+      <p>
+      Collections and appointments at our Malbereign (Harare) showroom can be scheduled via the following channels:
+      </p>
+      <span>
+      </span>
+      <span>
+        Contact Number: +263 78 614 1715
+      </span>
     </section>
   );
 };
