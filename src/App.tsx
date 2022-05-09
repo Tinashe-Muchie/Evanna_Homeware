@@ -7,7 +7,7 @@ export default function App() {
     <div className="app_wrapper">
       <HEAD />
       <ROUTING />
-      <footer>
+      <footer className="footer">
         <FOOTER />
       </footer>
     </div>

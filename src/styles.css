@@ -3,6 +3,7 @@
 :root {
   box-sizing: border-box;
   max-width: 100vw;
+  height: 100%;
   --confetti: rgba(233, 212, 96);
   --buddha_gold: rgba(189, 155, 25);
   --ripe_lemon: rgba(247, 202, 24);
@@ -23,10 +24,14 @@
   margin-top: 0.5em;
 }
 
+html,
 body {
   font-family: "Rubik", Arial, Helvetica, sans-serif;
   margin: 0;
   padding: 0;
+  height: 100%;
+  display: grid;
+  grid-template-rows: 1fr auto;
 }
 
 .head_wrapper {
@@ -221,6 +226,14 @@ input[type="tel"] {
   text-align: center;
 }
 
+.socials {
+  box-shadow: 0 0.1em var(--logo_green);
+}
+
+.socials:hover {
+  box-shadow: 0 0.1em var(--background_white);
+}
+
 .socials_links {
   text-decoration: none;
   color: var(--logo_green);
@@ -303,6 +316,23 @@ input[type="tel"] {
   color: var(--logo_green);
 }
 
+.footer {
+  grid-row-start: 2;
+  grid-row-end: 3;
+}
+
+.about_us_wrapper {
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  align-items: center;
+}
+
+.about_us_wrapper h1 {
+  text-transform: uppercase;
+  color: var(--logo_green);
+}
+
 @media screen and (min-width: 768px) {
   .category_container {
     font-size: 1rem;
@@ -321,5 +351,9 @@ input[type="tel"] {
   .head_container .image_wrapper > img {
     width: 30vw;
     height: 25vh;
+  }
+
+  .about_us_wrapper {
+    width: 80vw;
   }
 }
