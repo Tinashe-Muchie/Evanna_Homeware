@@ -5,8 +5,10 @@ import { ROUTING } from "./Routing";
 export default function App() {
   return (
     <div className="app_wrapper">
-      <HEAD />
-      <ROUTING />
+      <main className="main_content">
+        <HEAD />
+        <ROUTING />
+      </main>
       <footer className="footer">
         <FOOTER />
       </footer>

@@ -7,7 +7,6 @@ export const CONTACT_US = () => {
     fullname: "",
     email: "",
     phone_number: "",
-    message: ""
   });
 
   const inputs = [
