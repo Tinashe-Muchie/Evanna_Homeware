@@ -35,7 +35,7 @@ export const HEAD = () => {
         </div>
       </div>
       <div className="image_wrapper">
-        <img src="/images/logo.png" alt="evanna homeware logo" />
+        <img src="/images/logo-01.png" alt="evanna homeware logo" />
       </div>
       <nav className="category_container">
         <ul className="category_wrapper">
