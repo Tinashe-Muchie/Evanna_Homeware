@@ -1,9 +1,22 @@
+import { useState } from "react";
 import { FaTruckMoving, FaUser, FaStoreAlt, FaCartPlus } from "react-icons/fa";
 import { NavLink } from "react-router-dom";
+import { SIGN_IN } from "../Pages/index";
 
-export const HEAD = () => {
+export const HEADER = () => {
+  const [showLoginPage, setshowLoginPage] = useState(false);
+
+  const showLogin: () => JSX.Element | null = () => {
+    if (showLoginPage) {
+      return null;
+    }
+
+    return <SIGN_IN />;
+  };
+
   return (
     <header className="head_container">
+      <div>{showLogin}</div>
       <div className="head_wrapper">
         <div className="delivery">
           <div>

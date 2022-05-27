@@ -49,7 +49,6 @@ body {
 .head_wrapper {
   display: flex;
   justify-content: space-between;
-  color: var(--buddha_gold);
 }
 
 .head_wrapper .delivery {
@@ -333,11 +332,30 @@ input[type="tel"] {
   flex-direction: column;
   margin: auto;
   align-items: center;
+  color: var(--logo_green);
+  padding: 0.8em;
 }
 
 .about_us_wrapper h1 {
   text-transform: uppercase;
   color: var(--logo_green);
+}
+
+.about_us_wrapper div span {
+  background-color: var(--logo_gold);
+  margin-right: 0.3em;
+  padding: 0.2em;
+  border-radius: 0.2em;
+  text-align: center;
+}
+
+.signin_container {
+  display: block;
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: 10;
+  background-color: var(--ripe_lemon);
 }
 
 @media screen and (min-width: 768px) {
